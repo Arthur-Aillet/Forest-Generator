@@ -1,5 +1,5 @@
 [package]
-name = "forest_generator"
+name = "forest-generator"
 version = "0.1.0"
 edition = "2021"
 

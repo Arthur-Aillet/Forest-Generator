@@ -49,9 +49,9 @@ fn main() {
             Ok(nbr) => println!("{}", plant_forest(nbr)),
             Err(_) => println!("Invalid number passed as argument!"),
         }
-    }
-    if args.len() == 3 && args[1] == "burn" {
+    } else if args.len() == 3 && args[1] == "burn" {
         println!("{}", burn_forest(&args[2]));
+    } else {
+        println!("Invalid arguments!");
     }
-    println!("Invalid argument!");
 }
