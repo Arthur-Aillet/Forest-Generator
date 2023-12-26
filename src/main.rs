@@ -46,11 +46,11 @@ fn main() {
 
     if args.len() == 3 && args[1] == "plant" {
         match args[2].parse() {
-            Ok(nbr) => println!("{}", plant_forest(nbr)),
+            Ok(nbr) => print!("{}", plant_forest(nbr)),
             Err(_) => println!("Invalid number passed as argument!"),
         }
     } else if args.len() == 3 && args[1] == "burn" {
-        println!("{}", burn_forest(&args[2]));
+        print!("{}", burn_forest(&args[2]));
     } else {
         println!("Invalid arguments!");
     }
