@@ -53,4 +53,5 @@ fn main() {
     if args.len() == 3 && args[1] == "burn" {
         println!("{}", burn_forest(&args[2]));
     }
+    println!("Invalid argument!");
 }
