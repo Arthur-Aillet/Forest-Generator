@@ -12,7 +12,7 @@ fn plant_forest(len: usize) -> String {
     let one_char = || {
         let idx = wa_table.next_rng(&mut rng);
         let c = FOREST[idx];
-        if [' ','🪵'].contains(&c) {
+        if c == ' ' {
             let mut c_e = c.to_string();
             c_e.push(' ');
             c_e
